@@ -23,3 +23,28 @@ console.log(total);
 
 const stunames = students.filter((stu)=> stu.marks<80).map(stu=>stu.name);
 console.log(stunames)
+
+// When function treated like a variable , this function is callend first class func,In this func can pass into another function, used as parameter and return.
+
+
+// IIFE- Immediately invoked finction expression, use () to make IIFE
+
+// (function square(num){
+//      console.log(num*num);
+// })()
+
+// Example code
+// (function (x){
+//     return (function(y){
+//         console.log(x);  //Give output 1,  due to closure
+//     })(2);
+// })(1);
+
+
+var x = 21;
+var fun = function(){
+    console.log(x);
+    var x = 20;
+};
+
+fun();
