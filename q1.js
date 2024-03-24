@@ -31,10 +31,10 @@
 //     }, i*1000)
 // }
 // Print 1 23 using var
-for (var i =0; i<3; i++){
-    function inner(i){
+for (var i = 0; i<3; i++){
+     function inner(i){
         setTimeout(function log(){
-            console.log(i); // 3 3 3
+            console.log(i); 
         }, i*1000)
     }
     inner(i);
