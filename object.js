@@ -25,8 +25,8 @@ const shape={
      perimeter:()=>2*Math.PI*this.radius,
 };
 
-// console.log(shape.diameter()); //20
-// console.log(shape.perimeter()); // NaN
+console.log(shape.diameter()); //20
+console.log(shape.perimeter()); //NaN
 // const {name:myName} = users;
 
 
@@ -91,10 +91,10 @@ const value = {number:10};
 const multiply = (x = {...value}) =>{
      // console.log((x.number *=2));  
 }
-multiply(); //20
+multiply(); 
 multiply(); 
 multiply(value); //20
-multiply(value) //40
+multiply(value); 
 
 // 4444444444444444444444444
 
@@ -113,8 +113,8 @@ const personObj1 = {
 };
 // console.log(personObj1);
 const personObj2 = changeAgeAndRefrence(personObj1);
-// console.log(personObj1);
-// console.log(personObj2);
+console.log(personObj1); //
+console.log(personObj2); // 
 
 // Cloning og object
 
