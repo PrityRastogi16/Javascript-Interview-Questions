@@ -115,18 +115,28 @@ function isPrime(number){
 
 // console.log(isPrime(number))
 
-let abc = 10;
+// let abc = 10;
 
-function foo() {
-    console.log(abc);
-    let abc = 20;
-    console.log(abc);
+// function foo() {
+//     console.log(abc);
+//     let abc = 20;
+//     console.log(abc);
+// }
+
+// foo();
+
+
+
+let arr1 = [1,2,3,4];
+let arr2 = [3,4,5,6];
+for(let i = 0; i<arr2.length; i++){
+    if(!arr1.includes(arr2[i])){
+       arr1.push(arr2[i]);
+    }else{
+        arr1.remove(arr2[i]);
+    }
 }
-
-foo();
-
-
-
+console.log(arr1);
 
 
 

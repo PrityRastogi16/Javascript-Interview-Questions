@@ -23,3 +23,21 @@ var person={
 var person2 = {age:24};
 // console.log(person.getAge.call(person2));
 // console.log(person.getAge. bind(person2)());
+
+const array = ["a","b"]
+const el = [0,1,2];
+// el.push.apply(el,array);
+// console.log(el)
+
+
+// USE APPLY AND MIND MAX
+const numbers = [5,4,6,7,2,1,8,0];
+// console.log(Math.max.apply(null,numbers));
+
+function f(){
+    console.log(this);
+}
+let user = {
+    g:f.bind(null),
+};
+user.g();

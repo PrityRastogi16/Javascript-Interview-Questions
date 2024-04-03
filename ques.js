@@ -1,44 +1,58 @@
-function add(item, list){
-    return list.push(item);
-}
-const res = add('apple',['banana']);
-console.log(res);
+// function add(item, list){
+//     return list.push(item);
+// }
+// const res = add('apple',['banana']);
+// console.log(res);
 
 
-function squareRoot(x,n){
-    if(n==0){
-        return 1;
-    }
-    else{
-        return x*squareRoot(x,n-1);
-    }
-}
-console.log(squareRoot(3,2))
+// function squareRoot(x,n){
+//     if(n==0){
+//         return 1;
+//     }
+//     else{
+//         return x*squareRoot(x,n-1);
+//     }
+// }
+// console.log(squareRoot(3,2))
 
 
 // const promise1 = new Promise()
 // Promise.race
-const promise1 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 500, 'one');
-});
+// const promise1 = new Promise((resolve, reject) => {
+//     setTimeout(resolve, 100, 'one');
+// });
 
-const promise2 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 900, 'two');
-});
 
-const promise3 = new Promise((resolve, reject) => {
-    setTimeout(resolve, 300, 'three');
-});
+// const promise2 = new Promise((resolve, reject) => {
+//     setTimeout(reject, 900, 'two');
+// });
 
-Promise.race([promise1, promise2, promise3]).then((value) => {
-    console.log(value); // Output will be 'one' because promise1 resolves first
-});
+// const promise3 = new Promise((resolve, reject) => {
+//     setTimeout(resolve, 300, 'three');
+// });
 
-const person = { name: 'Lydia' };
-console.log(Object.defineProperty (person, 'age', { value: 21 }));
-console.log(person);
-// console.log(Object.keys(person));
+// Promise.all([promise1, promise2, promise3]).then((value) => {
+//     console.log(value); 
+// }).catch((err)=>{
+//     console.log(err);
+// })
 
-[[0,1],[2,3].reduce((acc,curr)=>{
-    return acc.concat(curr);
-})]
+// const person = { name: 'Lydia' };
+// console.log(Object.defineProperty (person, 'age', { value: 21 }));
+// console.log(person);
+
+
+let arr1 = [1,2,3,4];
+let arr2 = [3,4,5];
+
+let set = new Set([...arr1,...arr2])
+
+console.log(set);
+
+// for(let i = 0; i<arr2.length; i++){
+//     if(!arr1.includes(arr2[i])){
+//       arr2.splice(i,1);
+//       i--;
+//     }
+// }
+// console.log(arr2)

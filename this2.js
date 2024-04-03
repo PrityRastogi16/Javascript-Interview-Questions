@@ -53,3 +53,15 @@ const obj={
     },
 }
 obj.method(callBack)
+
+let arr1 = [1,2,2,4];
+let arr2 = [2,4,5,6];
+// [1,2,3,4,5,6]
+
+for(let i = 0; i<arr2.length; i++){
+    if(!arr1.includes(arr2[i])){
+arr1.push(arr2[i]);
+    }
+
+}
+console.log(arr1);
