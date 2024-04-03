@@ -48,9 +48,9 @@ let obj = [ "Prity","Shraddha"]
 
 function foo(num) {
     if (num < 0) {
-        return -num; // If num is negative, return its positive
+        return -num;
     } else {
-        return (num ^ -1) + 1; // Otherwise, return the negation of num
+        return (num ^ -1) + 1;
     }
 }
 console.log(foo(foo(10))); 
