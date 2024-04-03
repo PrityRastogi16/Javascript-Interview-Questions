@@ -55,17 +55,17 @@ function foo(num) {
 }
 console.log(foo(foo(10))); 
 
-// function foo(num) {
-//     return num < 0 ? (num ^ -1) + 1 : num;
-// }
+function foo(num) {
+    return num < 0 ? (num ^ -1) + 1 : num;
+}
 
 function foo(x) {
-    return x < 0 ? -(Math.abs(x) + 1) : -(Math.abs(x) - 1);
+    return x-x
 }
 
 console.log(foo(foo(5)));
-// function foo(num) {
-//     return (num < 0) ? (num ^ -1) + 1 : num;
-// }
+function foo(num) {
+    return (num < 0) ? (num ^ -1) + 1 : num;
+}
 
-// console.log(foo(foo(-10))); // Output: 10
+console.log(foo(foo(-10))); // Output: 10
