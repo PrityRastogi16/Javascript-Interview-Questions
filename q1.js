@@ -1,11 +1,11 @@
-// Undefined 
-// var x = 21;
-// var fun = function(){
-//     console.log(x);
-//     var x = 20;
-// };
 
-// fun();
+var x = 21;
+var fun = function(){
+    console.log(x);
+    var y = 20;
+};
+
+fun();
 
 // const fn = (a, x,y, ...numbers)=>{
 //     console.log(x,y);
@@ -14,7 +14,7 @@
 
 // fn(2,3,4,6,7,8);
 
-let obj = [ "Prity","Shraddha"]
+// let obj = [ "Prity","Shraddha"]
    
 
 // for(let a in obj){
@@ -46,26 +46,28 @@ let obj = [ "Prity","Shraddha"]
 // console.log(foo(10));
 
 
-function foo(num) {
-    if (num < 0) {
-        return -num;
-    } else {
-        return (num ^ -1) + 1;
-    }
-}
-console.log(foo(foo(10))); 
+// function foo(num) {
+//     if (num < 0) {
+//         return num; 
+//     } else {
+//         return (num ^ -1) + 1; 
+//     }
+// }
 
-function foo(num) {
-    return num < 0 ? (num ^ -1) + 1 : num;
-}
+// console.log(foo(foo(10))); 
 
-function foo(x) {
-    return x-x
-}
+// function foo(num) {
+//     return num < 0 ? (num ^ -1) + 1 : num;
+// }
 
-console.log(foo(foo(5)));
-function foo(num) {
-    return (num < 0) ? (num ^ -1) + 1 : num;
-}
+// function foo(x) {
+//     return x-x
+// }
 
-console.log(foo(foo(-10))); // Output: 10
+// console.log(foo(foo(5)));
+// function foo(num) {
+//     return (num < 0) ? (num ^ -1) + 1 : num;
+// }
+
+// console.log(foo(foo(-10))); // Output: 10
+

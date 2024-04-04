@@ -42,12 +42,12 @@
 // console.log(person);
 
 
-let arr1 = [1,2,3,4];
-let arr2 = [3,4,5];
+// let arr1 = [1,2,3,4];
+// let arr2 = [3,4,5];
 
-let set = new Set([...arr1,...arr2])
+// let set = new Set([...arr1,...arr2])
 
-console.log(set);
+// console.log(set);
 
 // for(let i = 0; i<arr2.length; i++){
 //     if(!arr1.includes(arr2[i])){

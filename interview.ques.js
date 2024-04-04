@@ -16,8 +16,8 @@
 // console.log(delete data.name);
 
 // const data = ["Prits", "Kartik", "Naman"];
-// const [x,y] = data;
-// console.log(x,y);
+// const [,y,x] = data;
+// console.log(y,x);
 
 
 // let data = {name:"PRity", age:21, skill:"JS"};
@@ -25,5 +25,27 @@
 // data = {...data,...info};
 // console.log(data)
 
-// const res = false || 0 || null   //1st true value
+// const res = false || 0 || true  
 // console.log(res);
+
+
+// let data = ["pri","aditi","shraddha","Anjali"]
+// delete data[1];
+// console.log(data);
+
+// let a = 2;
+// setTimeout(()=>{
+//     console.log(a)
+// },0)
+// a=100
+
+
+// let a = 1;
+// let c = 2;
+// console.log(--c === a);
+
+// let a = 1;
+// let b=1;
+// let c = 1;
+// console.log(a === b === c);
+
